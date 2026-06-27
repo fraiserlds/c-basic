@@ -29,13 +29,21 @@ class Duck : public Animal {
 		}
 };
 
+class Fish : public Animal {
+	public:
+		void say() override {
+			cout << "Blub blub ... \n";
+		}
+};
+
 int main() {
 	Dog myDog;
 	Cat myCat;
 	Duck myDuck;
+	Fish myFish;
 	// Animal* la con tro
 	// &myDog, &myCat la dia chi cua hai bien myDog, myCat
-	Animal* animals[] = {&myDog, &myCat, &myDuck};
+	Animal* animals[] = {&myDog, &myCat, &myDuck, %myFish};
 	int animalLength = sizeof(animals) / sizeof(animals[0]);
 	
 	for (int i = 0; i < animalLength; i++) {
