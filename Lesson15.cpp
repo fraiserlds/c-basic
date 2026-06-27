@@ -32,7 +32,7 @@ class Duck : public Animal {
 class Fish : public Animal {
 	public:
 		void say() override {
-			cout << "Bloob bloob ... \n";
+			cout << "Blob blob ... \n";
 		}
 };
 
